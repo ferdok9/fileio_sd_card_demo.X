@@ -1,4 +1,4 @@
-build/pic24fj256gb110_pim/production/src/sd_spi.o:  \
+build/PIC24FJ256GB108/production/src/sd_spi.o:  \
 src/sd_spi.c  \
  src/system_config.h  \
 src/fileio_config.h  \

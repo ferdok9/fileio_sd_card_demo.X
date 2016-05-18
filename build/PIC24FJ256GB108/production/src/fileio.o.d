@@ -1,4 +1,4 @@
-build/pic24fj256gb110_pim/production/src/fileio.o:  \
+build/PIC24FJ256GB108/production/src/fileio.o:  \
 src/fileio.c  \
  src/system_config.h  \
 src/fileio_config.h  \
