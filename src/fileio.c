@@ -19,7 +19,7 @@ please contact mla_licensing@microchip.com
 *******************************************************************************/
 //DOM-IGNORE-END
 
-#include "src\system_config.h"
+#include "system_config.h"
 #include "system.h"
 #include "fileio.h"
 #include "fileio_private.h"

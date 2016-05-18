@@ -38,6 +38,12 @@ DEBUGGABLE_SUFFIX=elf
 FINAL_IMAGE=dist/${CND_CONF}/${IMAGE_TYPE}/fileio_sd_card_demo.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
 endif
 
+ifeq ($(COMPARE_BUILD), true)
+COMPARISON_BUILD=-mafrlcsj
+else
+COMPARISON_BUILD=
+endif
+
 # Object Directory
 OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 
@@ -86,42 +92,42 @@ ${OBJECTDIR}/src/main.o: src/main.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/src" 
 	@${RM} ${OBJECTDIR}/src/main.o.d 
 	@${RM} ${OBJECTDIR}/src/main.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  src/main.c  -o ${OBJECTDIR}/src/main.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/src/main.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -no-legacy-libc  -O0 -I"." -I"../../../../../framework" -I"../src/system_config/exp16/pic24fj256gb110_pim" -I"../../../../../bsp/exp16/pic24fj256gb110_pim" -I"../src" -I"../../../../../framework/fileio/inc" -I"../../../../../framework/fileio/drivers/sd_spi" -msmart-io=1 -Wall -msfr-warn=off   -fno-ivopts
+	${MP_CC} $(MP_EXTRA_CC_PRE)  src/main.c  -o ${OBJECTDIR}/src/main.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/src/main.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1    -omf=elf -no-legacy-libc  $(COMPARISON_BUILD)  -O0 -I"." -I"../../../../../framework" -I"../src/system_config/exp16/pic24fj256gb110_pim" -I"../../../../../bsp/exp16/pic24fj256gb110_pim" -I"../src" -I"../../../../../framework/fileio/inc" -I"../../../../../framework/fileio/drivers/sd_spi" -msmart-io=1 -Wall -msfr-warn=off   -fno-ivopts
 	@${FIXDEPS} "${OBJECTDIR}/src/main.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
 ${OBJECTDIR}/src/system.o: src/system.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/src" 
 	@${RM} ${OBJECTDIR}/src/system.o.d 
 	@${RM} ${OBJECTDIR}/src/system.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  src/system.c  -o ${OBJECTDIR}/src/system.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/src/system.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -no-legacy-libc  -O0 -I"." -I"../../../../../framework" -I"../src/system_config/exp16/pic24fj256gb110_pim" -I"../../../../../bsp/exp16/pic24fj256gb110_pim" -I"../src" -I"../../../../../framework/fileio/inc" -I"../../../../../framework/fileio/drivers/sd_spi" -msmart-io=1 -Wall -msfr-warn=off   -fno-ivopts
+	${MP_CC} $(MP_EXTRA_CC_PRE)  src/system.c  -o ${OBJECTDIR}/src/system.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/src/system.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1    -omf=elf -no-legacy-libc  $(COMPARISON_BUILD)  -O0 -I"." -I"../../../../../framework" -I"../src/system_config/exp16/pic24fj256gb110_pim" -I"../../../../../bsp/exp16/pic24fj256gb110_pim" -I"../src" -I"../../../../../framework/fileio/inc" -I"../../../../../framework/fileio/drivers/sd_spi" -msmart-io=1 -Wall -msfr-warn=off   -fno-ivopts
 	@${FIXDEPS} "${OBJECTDIR}/src/system.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
 ${OBJECTDIR}/src/rtcc.o: src/rtcc.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/src" 
 	@${RM} ${OBJECTDIR}/src/rtcc.o.d 
 	@${RM} ${OBJECTDIR}/src/rtcc.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  src/rtcc.c  -o ${OBJECTDIR}/src/rtcc.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/src/rtcc.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -no-legacy-libc  -O0 -I"." -I"../../../../../framework" -I"../src/system_config/exp16/pic24fj256gb110_pim" -I"../../../../../bsp/exp16/pic24fj256gb110_pim" -I"../src" -I"../../../../../framework/fileio/inc" -I"../../../../../framework/fileio/drivers/sd_spi" -msmart-io=1 -Wall -msfr-warn=off   -fno-ivopts
+	${MP_CC} $(MP_EXTRA_CC_PRE)  src/rtcc.c  -o ${OBJECTDIR}/src/rtcc.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/src/rtcc.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1    -omf=elf -no-legacy-libc  $(COMPARISON_BUILD)  -O0 -I"." -I"../../../../../framework" -I"../src/system_config/exp16/pic24fj256gb110_pim" -I"../../../../../bsp/exp16/pic24fj256gb110_pim" -I"../src" -I"../../../../../framework/fileio/inc" -I"../../../../../framework/fileio/drivers/sd_spi" -msmart-io=1 -Wall -msfr-warn=off   -fno-ivopts
 	@${FIXDEPS} "${OBJECTDIR}/src/rtcc.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
 ${OBJECTDIR}/src/drv_spi_16bit.o: src/drv_spi_16bit.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/src" 
 	@${RM} ${OBJECTDIR}/src/drv_spi_16bit.o.d 
 	@${RM} ${OBJECTDIR}/src/drv_spi_16bit.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  src/drv_spi_16bit.c  -o ${OBJECTDIR}/src/drv_spi_16bit.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/src/drv_spi_16bit.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -no-legacy-libc  -O0 -I"." -I"../../../../../framework" -I"../src/system_config/exp16/pic24fj256gb110_pim" -I"../../../../../bsp/exp16/pic24fj256gb110_pim" -I"../src" -I"../../../../../framework/fileio/inc" -I"../../../../../framework/fileio/drivers/sd_spi" -msmart-io=1 -Wall -msfr-warn=off   -fno-ivopts
+	${MP_CC} $(MP_EXTRA_CC_PRE)  src/drv_spi_16bit.c  -o ${OBJECTDIR}/src/drv_spi_16bit.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/src/drv_spi_16bit.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1    -omf=elf -no-legacy-libc  $(COMPARISON_BUILD)  -O0 -I"." -I"../../../../../framework" -I"../src/system_config/exp16/pic24fj256gb110_pim" -I"../../../../../bsp/exp16/pic24fj256gb110_pim" -I"../src" -I"../../../../../framework/fileio/inc" -I"../../../../../framework/fileio/drivers/sd_spi" -msmart-io=1 -Wall -msfr-warn=off   -fno-ivopts
 	@${FIXDEPS} "${OBJECTDIR}/src/drv_spi_16bit.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
 ${OBJECTDIR}/src/fileio.o: src/fileio.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/src" 
 	@${RM} ${OBJECTDIR}/src/fileio.o.d 
 	@${RM} ${OBJECTDIR}/src/fileio.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  src/fileio.c  -o ${OBJECTDIR}/src/fileio.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/src/fileio.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -no-legacy-libc  -O0 -I"." -I"../../../../../framework" -I"../src/system_config/exp16/pic24fj256gb110_pim" -I"../../../../../bsp/exp16/pic24fj256gb110_pim" -I"../src" -I"../../../../../framework/fileio/inc" -I"../../../../../framework/fileio/drivers/sd_spi" -msmart-io=1 -Wall -msfr-warn=off   -fno-ivopts
+	${MP_CC} $(MP_EXTRA_CC_PRE)  src/fileio.c  -o ${OBJECTDIR}/src/fileio.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/src/fileio.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1    -omf=elf -no-legacy-libc  $(COMPARISON_BUILD)  -O0 -I"." -I"../../../../../framework" -I"../src/system_config/exp16/pic24fj256gb110_pim" -I"../../../../../bsp/exp16/pic24fj256gb110_pim" -I"../src" -I"../../../../../framework/fileio/inc" -I"../../../../../framework/fileio/drivers/sd_spi" -msmart-io=1 -Wall -msfr-warn=off   -fno-ivopts
 	@${FIXDEPS} "${OBJECTDIR}/src/fileio.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
 ${OBJECTDIR}/src/sd_spi.o: src/sd_spi.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/src" 
 	@${RM} ${OBJECTDIR}/src/sd_spi.o.d 
 	@${RM} ${OBJECTDIR}/src/sd_spi.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  src/sd_spi.c  -o ${OBJECTDIR}/src/sd_spi.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/src/sd_spi.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -no-legacy-libc  -O0 -I"." -I"../../../../../framework" -I"../src/system_config/exp16/pic24fj256gb110_pim" -I"../../../../../bsp/exp16/pic24fj256gb110_pim" -I"../src" -I"../../../../../framework/fileio/inc" -I"../../../../../framework/fileio/drivers/sd_spi" -msmart-io=1 -Wall -msfr-warn=off   -fno-ivopts
+	${MP_CC} $(MP_EXTRA_CC_PRE)  src/sd_spi.c  -o ${OBJECTDIR}/src/sd_spi.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/src/sd_spi.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1    -omf=elf -no-legacy-libc  $(COMPARISON_BUILD)  -O0 -I"." -I"../../../../../framework" -I"../src/system_config/exp16/pic24fj256gb110_pim" -I"../../../../../bsp/exp16/pic24fj256gb110_pim" -I"../src" -I"../../../../../framework/fileio/inc" -I"../../../../../framework/fileio/drivers/sd_spi" -msmart-io=1 -Wall -msfr-warn=off   -fno-ivopts
 	@${FIXDEPS} "${OBJECTDIR}/src/sd_spi.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
 else
@@ -129,42 +135,42 @@ ${OBJECTDIR}/src/main.o: src/main.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/src" 
 	@${RM} ${OBJECTDIR}/src/main.o.d 
 	@${RM} ${OBJECTDIR}/src/main.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  src/main.c  -o ${OBJECTDIR}/src/main.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/src/main.o.d"        -g -omf=elf -no-legacy-libc  -O0 -I"." -I"../../../../../framework" -I"../src/system_config/exp16/pic24fj256gb110_pim" -I"../../../../../bsp/exp16/pic24fj256gb110_pim" -I"../src" -I"../../../../../framework/fileio/inc" -I"../../../../../framework/fileio/drivers/sd_spi" -msmart-io=1 -Wall -msfr-warn=off   -fno-ivopts
+	${MP_CC} $(MP_EXTRA_CC_PRE)  src/main.c  -o ${OBJECTDIR}/src/main.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/src/main.o.d"        -g -omf=elf -no-legacy-libc  $(COMPARISON_BUILD)  -O0 -I"." -I"../../../../../framework" -I"../src/system_config/exp16/pic24fj256gb110_pim" -I"../../../../../bsp/exp16/pic24fj256gb110_pim" -I"../src" -I"../../../../../framework/fileio/inc" -I"../../../../../framework/fileio/drivers/sd_spi" -msmart-io=1 -Wall -msfr-warn=off   -fno-ivopts
 	@${FIXDEPS} "${OBJECTDIR}/src/main.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
 ${OBJECTDIR}/src/system.o: src/system.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/src" 
 	@${RM} ${OBJECTDIR}/src/system.o.d 
 	@${RM} ${OBJECTDIR}/src/system.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  src/system.c  -o ${OBJECTDIR}/src/system.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/src/system.o.d"        -g -omf=elf -no-legacy-libc  -O0 -I"." -I"../../../../../framework" -I"../src/system_config/exp16/pic24fj256gb110_pim" -I"../../../../../bsp/exp16/pic24fj256gb110_pim" -I"../src" -I"../../../../../framework/fileio/inc" -I"../../../../../framework/fileio/drivers/sd_spi" -msmart-io=1 -Wall -msfr-warn=off   -fno-ivopts
+	${MP_CC} $(MP_EXTRA_CC_PRE)  src/system.c  -o ${OBJECTDIR}/src/system.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/src/system.o.d"        -g -omf=elf -no-legacy-libc  $(COMPARISON_BUILD)  -O0 -I"." -I"../../../../../framework" -I"../src/system_config/exp16/pic24fj256gb110_pim" -I"../../../../../bsp/exp16/pic24fj256gb110_pim" -I"../src" -I"../../../../../framework/fileio/inc" -I"../../../../../framework/fileio/drivers/sd_spi" -msmart-io=1 -Wall -msfr-warn=off   -fno-ivopts
 	@${FIXDEPS} "${OBJECTDIR}/src/system.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
 ${OBJECTDIR}/src/rtcc.o: src/rtcc.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/src" 
 	@${RM} ${OBJECTDIR}/src/rtcc.o.d 
 	@${RM} ${OBJECTDIR}/src/rtcc.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  src/rtcc.c  -o ${OBJECTDIR}/src/rtcc.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/src/rtcc.o.d"        -g -omf=elf -no-legacy-libc  -O0 -I"." -I"../../../../../framework" -I"../src/system_config/exp16/pic24fj256gb110_pim" -I"../../../../../bsp/exp16/pic24fj256gb110_pim" -I"../src" -I"../../../../../framework/fileio/inc" -I"../../../../../framework/fileio/drivers/sd_spi" -msmart-io=1 -Wall -msfr-warn=off   -fno-ivopts
+	${MP_CC} $(MP_EXTRA_CC_PRE)  src/rtcc.c  -o ${OBJECTDIR}/src/rtcc.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/src/rtcc.o.d"        -g -omf=elf -no-legacy-libc  $(COMPARISON_BUILD)  -O0 -I"." -I"../../../../../framework" -I"../src/system_config/exp16/pic24fj256gb110_pim" -I"../../../../../bsp/exp16/pic24fj256gb110_pim" -I"../src" -I"../../../../../framework/fileio/inc" -I"../../../../../framework/fileio/drivers/sd_spi" -msmart-io=1 -Wall -msfr-warn=off   -fno-ivopts
 	@${FIXDEPS} "${OBJECTDIR}/src/rtcc.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
 ${OBJECTDIR}/src/drv_spi_16bit.o: src/drv_spi_16bit.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/src" 
 	@${RM} ${OBJECTDIR}/src/drv_spi_16bit.o.d 
 	@${RM} ${OBJECTDIR}/src/drv_spi_16bit.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  src/drv_spi_16bit.c  -o ${OBJECTDIR}/src/drv_spi_16bit.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/src/drv_spi_16bit.o.d"        -g -omf=elf -no-legacy-libc  -O0 -I"." -I"../../../../../framework" -I"../src/system_config/exp16/pic24fj256gb110_pim" -I"../../../../../bsp/exp16/pic24fj256gb110_pim" -I"../src" -I"../../../../../framework/fileio/inc" -I"../../../../../framework/fileio/drivers/sd_spi" -msmart-io=1 -Wall -msfr-warn=off   -fno-ivopts
+	${MP_CC} $(MP_EXTRA_CC_PRE)  src/drv_spi_16bit.c  -o ${OBJECTDIR}/src/drv_spi_16bit.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/src/drv_spi_16bit.o.d"        -g -omf=elf -no-legacy-libc  $(COMPARISON_BUILD)  -O0 -I"." -I"../../../../../framework" -I"../src/system_config/exp16/pic24fj256gb110_pim" -I"../../../../../bsp/exp16/pic24fj256gb110_pim" -I"../src" -I"../../../../../framework/fileio/inc" -I"../../../../../framework/fileio/drivers/sd_spi" -msmart-io=1 -Wall -msfr-warn=off   -fno-ivopts
 	@${FIXDEPS} "${OBJECTDIR}/src/drv_spi_16bit.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
 ${OBJECTDIR}/src/fileio.o: src/fileio.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/src" 
 	@${RM} ${OBJECTDIR}/src/fileio.o.d 
 	@${RM} ${OBJECTDIR}/src/fileio.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  src/fileio.c  -o ${OBJECTDIR}/src/fileio.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/src/fileio.o.d"        -g -omf=elf -no-legacy-libc  -O0 -I"." -I"../../../../../framework" -I"../src/system_config/exp16/pic24fj256gb110_pim" -I"../../../../../bsp/exp16/pic24fj256gb110_pim" -I"../src" -I"../../../../../framework/fileio/inc" -I"../../../../../framework/fileio/drivers/sd_spi" -msmart-io=1 -Wall -msfr-warn=off   -fno-ivopts
+	${MP_CC} $(MP_EXTRA_CC_PRE)  src/fileio.c  -o ${OBJECTDIR}/src/fileio.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/src/fileio.o.d"        -g -omf=elf -no-legacy-libc  $(COMPARISON_BUILD)  -O0 -I"." -I"../../../../../framework" -I"../src/system_config/exp16/pic24fj256gb110_pim" -I"../../../../../bsp/exp16/pic24fj256gb110_pim" -I"../src" -I"../../../../../framework/fileio/inc" -I"../../../../../framework/fileio/drivers/sd_spi" -msmart-io=1 -Wall -msfr-warn=off   -fno-ivopts
 	@${FIXDEPS} "${OBJECTDIR}/src/fileio.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
 ${OBJECTDIR}/src/sd_spi.o: src/sd_spi.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/src" 
 	@${RM} ${OBJECTDIR}/src/sd_spi.o.d 
 	@${RM} ${OBJECTDIR}/src/sd_spi.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  src/sd_spi.c  -o ${OBJECTDIR}/src/sd_spi.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/src/sd_spi.o.d"        -g -omf=elf -no-legacy-libc  -O0 -I"." -I"../../../../../framework" -I"../src/system_config/exp16/pic24fj256gb110_pim" -I"../../../../../bsp/exp16/pic24fj256gb110_pim" -I"../src" -I"../../../../../framework/fileio/inc" -I"../../../../../framework/fileio/drivers/sd_spi" -msmart-io=1 -Wall -msfr-warn=off   -fno-ivopts
+	${MP_CC} $(MP_EXTRA_CC_PRE)  src/sd_spi.c  -o ${OBJECTDIR}/src/sd_spi.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/src/sd_spi.o.d"        -g -omf=elf -no-legacy-libc  $(COMPARISON_BUILD)  -O0 -I"." -I"../../../../../framework" -I"../src/system_config/exp16/pic24fj256gb110_pim" -I"../../../../../bsp/exp16/pic24fj256gb110_pim" -I"../src" -I"../../../../../framework/fileio/inc" -I"../../../../../framework/fileio/drivers/sd_spi" -msmart-io=1 -Wall -msfr-warn=off   -fno-ivopts
 	@${FIXDEPS} "${OBJECTDIR}/src/sd_spi.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
 endif
@@ -186,12 +192,12 @@ endif
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
 dist/${CND_CONF}/${IMAGE_TYPE}/fileio_sd_card_demo.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk    
 	@${MKDIR} dist/${CND_CONF}/${IMAGE_TYPE} 
-	${MP_CC} $(MP_EXTRA_LD_PRE)  -o dist/${CND_CONF}/${IMAGE_TYPE}/fileio_sd_card_demo.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}      -mcpu=$(MP_PROCESSOR_OPTION)        -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -omf=elf -no-legacy-libc   -mreserve=data@0x800:0x81F -mreserve=data@0x820:0x821 -mreserve=data@0x822:0x823 -mreserve=data@0x824:0x825 -mreserve=data@0x826:0x84F   -Wl,,--defsym=__MPLAB_BUILD=1,--defsym=__MPLAB_DEBUG=1,--defsym=__DEBUG=1,--defsym=__MPLAB_DEBUGGER_PK3=1,$(MP_LINKER_FILE_OPTION),--check-sections,--data-init,--pack-data,--handles,--isr,--no-gc-sections,--fill-upper=0,--stackguard=16,--library-path="..",--no-force-link,--smart-io,-Map="$(BINDIR_)$(TARGETBASE).map",--report-mem,--memorysummary,dist/${CND_CONF}/${IMAGE_TYPE}/memoryfile.xml$(MP_EXTRA_LD_POST) 
+	${MP_CC} $(MP_EXTRA_LD_PRE)  -o dist/${CND_CONF}/${IMAGE_TYPE}/fileio_sd_card_demo.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}      -mcpu=$(MP_PROCESSOR_OPTION)        -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1  -omf=elf -no-legacy-libc  $(COMPARISON_BUILD)      -Wl,,--defsym=__MPLAB_BUILD=1,--defsym=__MPLAB_DEBUG=1,--defsym=__DEBUG=1,--defsym=__MPLAB_DEBUGGER_SIMULATOR=1,$(MP_LINKER_FILE_OPTION),--check-sections,--data-init,--pack-data,--handles,--isr,--no-gc-sections,--fill-upper=0,--stackguard=16,--library-path="..",--no-force-link,--smart-io,-Map="$(BINDIR_)$(TARGETBASE).map",--report-mem,--memorysummary,dist/${CND_CONF}/${IMAGE_TYPE}/memoryfile.xml$(MP_EXTRA_LD_POST) 
 	
 else
 dist/${CND_CONF}/${IMAGE_TYPE}/fileio_sd_card_demo.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk   
 	@${MKDIR} dist/${CND_CONF}/${IMAGE_TYPE} 
-	${MP_CC} $(MP_EXTRA_LD_PRE)  -o dist/${CND_CONF}/${IMAGE_TYPE}/fileio_sd_card_demo.X.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}      -mcpu=$(MP_PROCESSOR_OPTION)        -omf=elf -no-legacy-libc  -Wl,,--defsym=__MPLAB_BUILD=1,$(MP_LINKER_FILE_OPTION),--check-sections,--data-init,--pack-data,--handles,--isr,--no-gc-sections,--fill-upper=0,--stackguard=16,--library-path="..",--no-force-link,--smart-io,-Map="$(BINDIR_)$(TARGETBASE).map",--report-mem,--memorysummary,dist/${CND_CONF}/${IMAGE_TYPE}/memoryfile.xml$(MP_EXTRA_LD_POST) 
+	${MP_CC} $(MP_EXTRA_LD_PRE)  -o dist/${CND_CONF}/${IMAGE_TYPE}/fileio_sd_card_demo.X.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}      -mcpu=$(MP_PROCESSOR_OPTION)        -omf=elf -no-legacy-libc  $(COMPARISON_BUILD)  -Wl,,--defsym=__MPLAB_BUILD=1,$(MP_LINKER_FILE_OPTION),--check-sections,--data-init,--pack-data,--handles,--isr,--no-gc-sections,--fill-upper=0,--stackguard=16,--library-path="..",--no-force-link,--smart-io,-Map="$(BINDIR_)$(TARGETBASE).map",--report-mem,--memorysummary,dist/${CND_CONF}/${IMAGE_TYPE}/memoryfile.xml$(MP_EXTRA_LD_POST) 
 	${MP_CC_DIR}\\xc16-bin2hex dist/${CND_CONF}/${IMAGE_TYPE}/fileio_sd_card_demo.X.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX} -a  -omf=elf  
 	
 endif

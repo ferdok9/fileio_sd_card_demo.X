@@ -27,11 +27,11 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 PROJECTNAME=fileio_sd_card_demo.X
 
 # Active Configuration
-DEFAULTCONF=pic24fj256gb110_pim
+DEFAULTCONF=PIC24FJ256GB108
 CONF=${DEFAULTCONF}
 
 # All Configurations
-ALLCONFS=pic24fj256gb110_pim 
+ALLCONFS=pic24fj256gb110_pim PIC24FJ256GB108 
 
 
 # build
@@ -46,12 +46,14 @@ ALLCONFS=pic24fj256gb110_pim
 # clobber
 .clobber-impl: .clobber-pre .depcheck-impl
 	    ${MAKE} SUBPROJECTS=${SUBPROJECTS} CONF=pic24fj256gb110_pim clean
+	    ${MAKE} SUBPROJECTS=${SUBPROJECTS} CONF=PIC24FJ256GB108 clean
 
 
 
 # all
 .all-impl: .all-pre .depcheck-impl
 	    ${MAKE} SUBPROJECTS=${SUBPROJECTS} CONF=pic24fj256gb110_pim build
+	    ${MAKE} SUBPROJECTS=${SUBPROJECTS} CONF=PIC24FJ256GB108 build
 
 
 

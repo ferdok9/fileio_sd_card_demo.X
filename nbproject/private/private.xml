@@ -3,11 +3,18 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/F:/Chast_2/PROEKTI/MMC%20card%20SD/MLA/fileio_sd_card_demo.X/src/system.h</file>
+            <file>file:/F:/Chast_2/PROEKTI/MMC%20card%20SD/MLA/fileio_sd_card_demo.X/src/driver/spi/drv_spi.h</file>
+            <file>file:/F:/Chast_2/PROEKTI/MMC%20card%20SD/MLA/fileio_sd_card_demo.X/src/drv_spi_16bit.c</file>
+            <file>file:/F:/Chast_2/PROEKTI/MMC%20card%20SD/MLA/fileio_sd_card_demo.X/src/main.h</file>
+            <file>file:/F:/Chast_2/PROEKTI/MMC%20card%20SD/MLA/fileio_sd_card_demo.X/src/sd_spi_config.h</file>
             <file>file:/F:/Chast_2/PROEKTI/MMC%20card%20SD/MLA/fileio_sd_card_demo.X/src/fileio.c</file>
             <file>file:/F:/Chast_2/PROEKTI/MMC%20card%20SD/MLA/fileio_sd_card_demo.X/src/sd_spi.c</file>
             <file>file:/F:/Chast_2/PROEKTI/MMC%20card%20SD/MLA/fileio_sd_card_demo.X/src/fileio.h</file>
             <file>file:/F:/Chast_2/PROEKTI/MMC%20card%20SD/MLA/fileio_sd_card_demo.X/src/fileio_private.h</file>
+            <file>file:/F:/Chast_2/PROEKTI/MMC%20card%20SD/MLA/fileio_sd_card_demo.X/src/sd_spi.h</file>
             <file>file:/F:/Chast_2/PROEKTI/MMC%20card%20SD/MLA/fileio_sd_card_demo.X/src/main.c</file>
+            <file>file:/F:/Chast_2/PROEKTI/MMC%20card%20SD/MLA/fileio_sd_card_demo.X/src/fileio_config.h</file>
         </group>
     </open-files>
 </project-private>

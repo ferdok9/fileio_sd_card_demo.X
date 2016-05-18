@@ -43,7 +43,7 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 // DOM-IGNORE-END
 
 #include <xc.h>
-#include "driver/spi/drv_spi.h"
+#include "drv_spi.h"
 #include "system_config.h"
 #include "system.h"
 #include <stdint.h>

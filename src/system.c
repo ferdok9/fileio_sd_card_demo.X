@@ -20,7 +20,7 @@
  CONSEQUENTIAL DAMAGES, FOR ANY REASON WHATSOEVER.
  *******************************************************************/
 
-#include "src\system_config.h"
+#include "system_config.h"
 #include "system.h"
 #include <xc.h>
 #include <stdbool.h>

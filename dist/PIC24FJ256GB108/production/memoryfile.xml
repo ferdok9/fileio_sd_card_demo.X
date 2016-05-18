@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project>
+  <executable name="dist/PIC24FJ256GB108/production/fileio_sd_card_demo.X.production.elf">
+    <memory name="data">
+      <units>bytes</units>
+      <length>16384</length>
+      <used>1190</used>
+      <free>15194</free>
+    </memory>
+    <memory name="program">
+      <units>bytes</units>
+      <length>261876</length>
+      <used>35871</used>
+      <free>226005</free>
+    </memory>
+  </executable>
+</project>

@@ -1,0 +1,20 @@
+#
+# Generated - do not edit!
+#
+# NOCDDL
+#
+CND_BASEDIR=`pwd`
+# pic24fj256gb110_pim configuration
+CND_ARTIFACT_DIR_pic24fj256gb110_pim=dist/pic24fj256gb110_pim/production
+CND_ARTIFACT_NAME_pic24fj256gb110_pim=fileio_sd_card_demo.X.production.hex
+CND_ARTIFACT_PATH_pic24fj256gb110_pim=dist/pic24fj256gb110_pim/production/fileio_sd_card_demo.X.production.hex
+CND_PACKAGE_DIR_pic24fj256gb110_pim=${CND_DISTDIR}/pic24fj256gb110_pim/package
+CND_PACKAGE_NAME_pic24fj256gb110_pim=fileiosdcarddemo.x.tar
+CND_PACKAGE_PATH_pic24fj256gb110_pim=${CND_DISTDIR}/pic24fj256gb110_pim/package/fileiosdcarddemo.x.tar
+# PIC24FJ256GB108 configuration
+CND_ARTIFACT_DIR_PIC24FJ256GB108=dist/PIC24FJ256GB108/production
+CND_ARTIFACT_NAME_PIC24FJ256GB108=fileio_sd_card_demo.X.production.hex
+CND_ARTIFACT_PATH_PIC24FJ256GB108=dist/PIC24FJ256GB108/production/fileio_sd_card_demo.X.production.hex
+CND_PACKAGE_DIR_PIC24FJ256GB108=${CND_DISTDIR}/PIC24FJ256GB108/package
+CND_PACKAGE_NAME_PIC24FJ256GB108=fileiosdcarddemo.x.tar
+CND_PACKAGE_PATH_PIC24FJ256GB108=${CND_DISTDIR}/PIC24FJ256GB108/package/fileiosdcarddemo.x.tar

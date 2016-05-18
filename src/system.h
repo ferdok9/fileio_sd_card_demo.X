@@ -33,7 +33,7 @@
 #include <stdint.h>
 #include <stdbool.h>
 
-#include "src/driver/spi/drv_spi.h"
+#include "drv_spi.h"
 
 // Definition for system clock
 #define SYS_CLK_FrequencySystemGet()        32000000
